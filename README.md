@@ -1,0 +1,1 @@
+This program is to find the password for my mom's bicycle lock that she forgot the password of. It will generate the list of combinations that are part of the english language (she said it's an english word) and output them to a file.
