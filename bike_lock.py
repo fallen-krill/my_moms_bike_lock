@@ -44,11 +44,14 @@ def main():
         four_letter_words.update({four_letter_words_list[i]: i})
 
     output = open("output.txt", "w")
+    counter = 0
     for i in range(len(combinations)):
         if combinations[i] in four_letter_words:
             output.write(combinations[i])
             output.write("\n")
             output.flush()
+            counter += 1
     output.close
-    
+
+    print(str(counter) + " possible combinations.")
 main()
