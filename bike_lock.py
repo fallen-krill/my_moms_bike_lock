@@ -1,5 +1,5 @@
 # generates a list of words from a file that is separated by newline characters
-def list_from_csv(path_to_file):
+def list_from_file(path_to_file):
     file = open(path_to_file, 'r')
     contents = file.read()    #puts the contents of the file into a big string
     contents_list = contents.split("\n")
@@ -37,11 +37,8 @@ def get_dial_combinations():
 
 
 def main():
-    # dial_combinations = get_dial_combinations()
-    # for i in range(len(dial_combinations)):
-    #     print(dial_combinations[i])
-
-    four_letter_words_list = trim_list(list_from_csv("wordlist"), 4)
+    
+    four_letter_words_list = trim_list(list_from_file("wordlist"), 4)
     four_letter_words = {}    #create dictionary
     combinations = get_dial_combinations()
 

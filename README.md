@@ -1,3 +1,5 @@
 This program is to find the password for my mom's bicycle lock that she forgot the password of. The lock consists of four dials each with 10 letters on them. This program will generate the list of combinations that are part of the english language (my mom said the password is an english word) and output them to a file.
 
 This took me longer than it would have to bruteforce it probably, given there are 10000 possible combinations if you don't limit yourself to english words. At one second per combination, it'd take approximately 2.8 hours to bruteforce. Now it'd probably take longer for each possible combination, but there are far less of them. I don't know how much of a reduction in time that is and also I'm not sure this is worth the time it took given the lock was $6.
+
+Wordlist source: https://websites.umich.edu/~jlawler/wordlist.html
